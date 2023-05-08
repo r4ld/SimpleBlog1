@@ -1,0 +1,46 @@
+form {
+  position: relative;
+  margin: 15px;
+  display: flex; flex-flow: column nowrap;
+  font-size: 1.1em;
+  line-height: 1.3em;}
+form * {
+  font-family: Calibri, sans-serif;
+  font-size: 16px;}
+
+form .row {
+  position: relative;
+  display: flex; justify-content: space-between;
+  margin-bottom: 10px;}
+form .column1 {width: 25%;}
+form .column2 {width: 70%;}
+
+form label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;}
+form .box {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #00000020;
+  border-radius: 5px;
+  background: none;
+  resize: vertical;
+  transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;}
+form .box:focus {
+  border: 1px solid #9b9b00;
+  -webkit-box-shadow: 0 0 5px #00000040;
+  box-shadow: 0 0 5px #00000040;}
+form > div:nth-last-child(-n+2) {margin-bottom: 50px;}
+
+form .icon {
+  width: 30px; height: 45px;
+  position: absolute;
+  display: flex;
+  justify-content: center; align-items: center;
+  right: -30px;top: 0;}
+form i{position: absolute;}
+
+.failure-icon, .error {color: red;}
+.success-icon {color: green;}
+.success-icon, .failure-icon {opacity: 0;}
