@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <title>Contact - Michelle's cake blog</title>
+</head>
+
+<body>
+	<header id="top">
+		<a href="index.html" tabindex="-1"><p>Michelle's Cakes<p></a>
+  </header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a tabindex="0">Recipes</a>
+				<ul>
+					<li><a href="details-1.html">Classic Yellow Cake</a></li>
+					<li><a href="details-2.html">Coconut Bundt Cake</a></li>
+					<li><a href="details-3.html">Cream Cheese Pound Cake</a></li>
+					<li><a href="details-4.html">German Chocolate Cake</a></li>
+				</ul>
+			</li>
+      <li><a tabindex="0">About</a>
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</li>
+      <li><a href="order.html">Order</a></li>
+		</ul>
+	</nav>
+  
+  <main>
+		<section class="detail">
+			<h1>Contact me</h1>
+			<form id="form">
+
+        <div class="row">
+          <div class="column1"><label for="fname">Your name:</label></div>
+          <div class="column2">
+            <input class="box" type="text" id="fname" name="fname"
+            placeholder="Please enter your full name">
+            <div class="icon">
+              <i class="fas fa-exclamation failure-icon"></i>
+              <i class="fas fa-check success-icon"></i>
+            </div>
+            <div class="error"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column1"><label for="email">Your email:</label></div>
+          <div class="column2">
+            <input class="box" type="text" id="email" name="email"
+            placeholder="Please enter your email">
+            <div class="icon">
+              <i class="fas fa-exclamation failure-icon"></i>
+              <i class="fas fa-check success-icon"></i>
+            </div>
+            <div class="error"></div>
+          </div>
+
+        </div>
+        
+        <div class="row">
+          <div class="column1"><label for="subject">Subject:</label></div>
+          <div class="column2">
+            <input class="box" type="text" id="subject" name="subject">
+            <div class="icon">
+              <i class="fas fa-exclamation failure-icon"></i>
+              <i class="fas fa-check success-icon"></i>
+            </div>
+            <div class="error"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column1"><label for="mess">Message:</label></div>
+          <div class="column2">
+            <textarea class="box" type="text" id="mess" name="mess"
+            placeholder="Write something..." style="height:150px"></textarea>
+            <div class="icon">
+              <i class="fas fa-exclamation failure-icon"></i>
+              <i class="fas fa-check success-icon"></i>
+            </div>
+            <div class="error"></div>
+          </div>
+        </div>
+
+        <button class="button" type="submit">
+          <span>Send message</span>
+        </button>
+        
+      </form>
+		</section>
+    
+	</main>
+
+	<footer>
+		<a href="#top">Top &nbsp;<i class="fas fa-chevron-down"></i></a>
+		<p class="copyright"><strong>&#169; 2022 Brown Eyed Baker</strong></p>
+		<p class="copyright">All the information, images, and graphics used in this page belong to their respective owners from <a href="https://www.browneyedbaker.com">this page</a> and I do not claim any right over them.</p>
+	</footer>
+
+  <script src="js/contact.js"></script>
+</body>
